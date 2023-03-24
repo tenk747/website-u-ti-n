@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+.product {
+  border: 4px solid black;
+  width: 825px;
+  margin: 50px auto;
+  position: relative;
+}
+.sale {
+  color: white;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 2px;
+  background-color: red;
+  padding: 7px 15px;
+  text-align: center;
+  display: inline-block;
+  position: absolute;
+  top: -20px;
+  left: -40px;
+}
+.product-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #f7f7f7;
+  padding: 15px;
+}
+
+.price {
+  font-size: 24px;
+}
+.shipping {
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+  font-weight: bold;
+  /* padding-bottom: 20px; */
+}
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+.details-title {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+.details-list {
+  list-style-type: square;
+  padding-left: 20px;
+}
+.details-list li {
+  padding-bottom: 10px;
+}
+.add-cart {
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  width: 100%;
+  border-top: 15px solid black;
+}
+.add-cart:hover {
+  color: black;
+  background-color: white;
+}
+.color {
+  width: 22px;
+  height: 22px;
+  background-color: black;
+  /* display: inline-block; */
+  /* margin-top: 30px;
+  margin-right: 10px; */
+}
+.color-blue {
+  background-color: blue;
+}
+.color-red {
+  background-color: red;
+}
+.color-yellow {
+  background-color: yellow;
+}
+.color-green {
+  background-color: green;
+}
+.color-brown {
+  background-color: brown;
+}
+
+/* FLEXBOX LAYOUT*/
+
+/* .flexbox {
+  display: flex;
+  gap: 50px;
+} */
+.product-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.product-colors {
+  display: flex;
+  gap: 20px;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+/* GRID LAYOUT */
+.product {
+  display: grid;
+  grid-template-columns: 250px 1fr 1fr;
+  column-gap: 40px;
+}
+.product-title {
+  grid-column: 1/-1;
+}
+.add-cart {
+  grid-column: 1/-1;
+}
